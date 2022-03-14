@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux"
-import { getAuth } from "../../store/authReducer";
+import { getAuth } from "../../store/authReducer.ts";
 import './AuthForm.css'
 
 export default function AuthForm() {
