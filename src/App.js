@@ -9,9 +9,9 @@ export default function App() {
   const auth = useSelector(state => state.auth.authorized)
   const dispatch = useDispatch()
 
-    useEffect(() => {
-        dispatch(fetchUsers())
-    }, [])
+  useEffect(() => {
+      dispatch(fetchUsers())
+  }, [])
 
   return (
     <div className="App">
