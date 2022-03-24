@@ -10,14 +10,14 @@ export default function App() {
   const dispatch = useDispatch()
 
   useEffect(() => {
-      dispatch(fetchUsers())
+    dispatch(fetchUsers())
   }, [])
 
   return (
     <div className="App">
       {auth
-        ? <UserList/>
-        : <AuthForm/>
+        ? <UserList />
+        : <AuthForm />
       }
     </div>
   );

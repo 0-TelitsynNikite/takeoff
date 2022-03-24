@@ -1,0 +1,27 @@
+.form {
+    width: 500px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50px;
+    background: rgb(50, 79, 92);
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    overflow: hidden;
+    animation: show .2s;
+}
+
+@keyframes show {
+    from {
+        transform: translateX(500px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}

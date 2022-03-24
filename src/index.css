@@ -10,3 +10,9 @@
 body {
   background: #333;
 }
+
+:root {
+  --blur-color: rgb(57, 113, 185);
+  --border-radius: 5px;
+  --grey-input: rgb(39, 39, 39);
+}

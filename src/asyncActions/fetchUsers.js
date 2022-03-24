@@ -1,4 +1,4 @@
-import { getUsers } from "../store/usersReducer.ts"
+import { getUsers } from "../store/actions"
 
 export const fetchUsers = () => {
     return function(dispatch) {

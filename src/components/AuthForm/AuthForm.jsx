@@ -5,12 +5,12 @@ import './AuthForm.css'
 
 export default function AuthForm() {
     const dispatch = useDispatch()
-    const users = useSelector( state => state.users.users)
+    const users = useSelector(state => state.users.users)
     const [textInput, setTextInput] = useState('')
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        
+
         users.filter(item => {
             if (textInput === item.email) {
                 dispatch(getAuth(true))
@@ -19,17 +19,18 @@ export default function AuthForm() {
     }
 
     return (
-        <form 
+        <form
             onSubmit={handleSubmit}
             className="auth-form"
         >
             <h1 className="title">Введите email</h1>
-            <input 
-                onChange={e => setTextInput(e.target.value)} 
-                type="email" 
+            <input
+                onChange={e => setTextInput(e.target.value)}
+                type="email"
                 placeholder="Email..."
-                className="auth-form__input" 
+                className="auth-form__input"
             />
+
             <button className="auth-form__button">Войти</button>
         </form>
     )

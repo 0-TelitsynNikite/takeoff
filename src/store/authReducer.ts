@@ -15,11 +15,11 @@ const AUTH = 'AUTH/AUTHORIZED'
 
 export const authReducer = (state = defaultState, action: UserAction): UserState => {
     switch (action.type) {
-        case AUTH: 
-            return {...state, authorized: true}
-        default: 
+        case AUTH:
+            return { ...state, authorized: true }
+        default:
             return state
     }
-} 
+}
 
-export const getAuth = payload => ({type: AUTH, payload})
+export const getAuth = payload => ({ type: AUTH, payload })
